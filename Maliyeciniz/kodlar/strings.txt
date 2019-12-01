@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Maliyeciniz</string>
+    <string name="finansal_durum">Finansal Durum</string>
+    <string name="para_nerden">Paranýn Geliþ Kaynaðý</string>
+    <string name="Aciklama">Açýklama</string>
+    <string name="nakit">Nakit</string>
+    <string name="banka">Banka</string>
+    <string name="gelir_kaynak">Paranýn Ekleneceði Kaynak</string>
+    <string name="gider_kaynak">Giderin Yapýlacaðý Kaynak</string>
+    <string name="hesap_tipi">Hesap Tipi</string>
+    <string name="girislogo">girislogo</string>
+    <string name="logo2">logo2</string>
+</resources>

@@ -1,0 +1,31 @@
+package com.maliyeciniz.maliyeciniz
+
+import android.content.Intent
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import android.view.animation.AnimationUtils
+import kotlinx.android.synthetic.main.activity_splash.*
+
+class SplashActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
+
+        var fromright = AnimationUtils.loadAnimation(this, R.anim.fromright)
+        btnGo.animation=fromright
+
+        var fromleft = AnimationUtils.loadAnimation(this,R.anim.fromleft)
+        girisLogo.animation=fromleft
+
+        btnGo.setOnClickListener() {
+
+            var intent= Intent(this, GiderActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
+
+    }
+}

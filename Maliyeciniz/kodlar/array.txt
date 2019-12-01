@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="giderler">
+
+        <item>Alýþveriþ</item>
+        <item>Araba Masraflarý</item>
+        <item>Dýþardan yemek</item>
+        <item>Diðer Borçlar</item>
+        <item>Eðitim</item>
+        <item>Eðlence</item>
+        <item>Fatura Ödeme</item>
+        <item>Kira</item>
+        <item>Kredi Kartý Borçlarý</item>
+        <item>Kozmetik</item>
+        <item>Oyun</item>
+        <item>Saðlýk</item>
+        <item>Spor</item>
+        <item>Tatil</item>
+        <item>Ulaþým</item>
+        <item>Diðer</item>
+
+    </string-array>
+
+    <string-array name="paraNerden">
+        <item>Bonus</item>
+        <item>Borç Temini</item>
+        <item>Ek Ýþ</item>
+        <item>Maaþ</item>
+        <item>Diðer</item>
+
+    </string-array>
+
+
+</resources>

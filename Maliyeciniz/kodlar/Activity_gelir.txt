@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grad" tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+            android:layout_width="185dp"
+            android:layout_height="148dp" app:srcCompat="@drawable/logo2"
+            android:id="@+id/logo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="24dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.502" android:contentDescription="@string/logo2"/>
+    <TextView
+            android:text="@string/hesap_tipi"
+            android:layout_width="211dp"
+            android:layout_height="28dp"
+            android:id="@+id/textView" android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/logo2" app:layout_constraintHorizontal_bias="0.292"/>
+    <RadioGroup
+            android:layout_width="212dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.294" android:id="@+id/radioGroup">
+        <RadioButton
+                android:text="@string/nakit"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_nakit2" android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteY="273dp" tools:layout_editor_absoluteX="55dp" android:checked="false"
+                android:clickable="true" android:duplicateParentState="false" android:focusable="true"/>
+        <RadioButton
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_bos2" android:layout_weight="1" android:visibility="invisible"
+                android:clickable="false" android:duplicateParentState="false" android:checked="false"/>
+        <RadioButton
+                android:text="@string/banka"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_banka2"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteY="277dp" tools:layout_editor_absoluteX="195dp" android:clickable="true"
+                android:checked="false" android:focusable="true"/>
+
+    </RadioGroup>
+
+    <TextView
+            android:text="@string/para_nerden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tw4" android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.237"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/radioGroup"/>
+    <AutoCompleteTextView
+            android:hint="@string/Aciklama"
+            android:layout_width="298dp"
+            android:layout_height="41dp"
+            android:id="@+id/acTw"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.657" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sp_nerden"/>
+    <Button
+            android:layout_width="245dp"
+            android:layout_height="46dp"
+            android:id="@+id/btn_gelir" android:background="@drawable/btngelir"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/acTw"
+            app:layout_constraintHorizontal_bias="0.504" app:layout_constraintVertical_bias="0.234"/>
+    <Spinner
+            android:layout_width="217dp"
+            android:layout_height="26dp"
+            android:id="@+id/sp_nerden"
+            android:entries="@array/paraNerden"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.304" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tw4"/>
+</android.support.constraint.ConstraintLayout>
